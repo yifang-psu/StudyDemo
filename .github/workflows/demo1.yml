@@ -1,8 +1,13 @@
 name: hello-world
 'on': push
 jobs:
-  my-job:
+  my-job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "this is a test of yaml"
+      - name: my-1st-step
+        run: echo "finished 1st step"
+  my-job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-2nd-step
+        run: echo "finished 2nd step"
